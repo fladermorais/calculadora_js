@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <main class="calculadora container">
+        <section class="resultado">
+            <input type="text" id="resultado">
+        </section>
+
+        <section class="teclas">
+            <div class="row">
+                <input type="button" value="**" onclick="botao('**')">
+                <input type="button" value="DEL" id="del" onclick="del()">
+                <input type="button" value="%" onclick="botao('%')">
+                <input type="button" value="C" id="clean" onclick="clean()">
+            </div>
+
+            <div class="row">
+                <input type="button" value="7" onclick="botao('7')">
+                <input type="button" value="8" onclick="botao('8')">
+                <input type="button" value="9" onclick="botao('9')">
+                <input type="button" value="x" onclick="botao('*')">
+            </div>
+
+            <div class="row">
+                <input type="button" value="4" onclick="botao('4')">
+                <input type="button" value="5" onclick="botao('5')">
+                <input type="button" value="6" onclick="botao('6')">
+                <input type="button" value="-" onclick="botao('-')">
+            </div>
+
+            <div class="row">
+                <input type="button" value="1" onclick="botao('1')">
+                <input type="button" value="2" onclick="botao('2')">
+                <input type="button" value="3" onclick="botao('3')">
+                <input type="button" value="/" onclick="botao('/')">
+            </div>
+
+            <div class="row">
+                <input type="button" value="0" onclick="botao('0')">
+                <input type="button" value="." onclick="botao('.')">
+                <input type="button" value="=" id="success" onclick="result()">
+                <input type="button" value="+" onclick="botao('+')">
+            </div>
+
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
